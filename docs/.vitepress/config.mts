@@ -374,7 +374,10 @@ export default defineConfig({
               text: "Templating",
               link: `/docs/templating`
             },
-
+            {
+              text: "Throw HTTP exceptions",
+              link: `/docs/throw-http-exceptions`
+            },
             {
               text: "Session & Cookies",
               link: `/docs/session`
@@ -410,7 +413,7 @@ export default defineConfig({
               text: "IORedis",
               link: `/tutorials/ioredis`
             }
-          ].sort((a, b) => a.text > b.text)
+          ].sort((a, b) => a.text.localeCompare(b.text))
         },
         {
           text: "Recipes",
@@ -488,7 +491,7 @@ export default defineConfig({
               text: "Vike",
               link: `/tutorials/vike`
             }
-          ].sort((a, b) => a.text > b.text)
+          ].sort((a, b) => a.text.localeCompare(b.text))
         }
       ]
     },
